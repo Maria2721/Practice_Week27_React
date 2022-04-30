@@ -1,0 +1,57 @@
+.card-cyan{
+    background-color: #5ad6f5;
+}
+
+.card-turquoise{
+    background-color: #0da77e;
+}
+
+.card-coral{
+    background-color: #f65941;
+}
+
+.card-darkblue{
+    background-color: #39354d;
+}
+
+.card {
+    border-radius: 0%;
+    border: solid 1px #fff;
+    text-align: center;
+    font-size: 18px;
+    width: 16vw;
+    color: #666666;
+
+    div{
+        padding: 8%;
+        span{
+            margin-top: 0px;
+        }
+        p{
+            margin-bottom: 0px;
+            text-align: start;
+            padding-left: 10%;
+        }
+    }
+    .card-text {
+        color: #fff;
+    }
+    .card-header {
+        filter: brightness(80%);
+        font-size: 25px;
+        margin-bottom: 2px;
+        padding: 5%;
+    }
+    .price-large{
+        font-size: 50px;
+    }
+    .card-footer{
+        background-color: rgb(237, 237, 237);
+    }
+}
+
+.card-selected{
+    width: 18vw;
+    margin-top: -10px;
+    box-shadow: -5px 5px 10px 5px rgba(0,0,0,0.25);
+}
