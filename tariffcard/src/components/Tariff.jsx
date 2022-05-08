@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './Tariff.scss';
 
 function Tariff(props) {
-    let cardSelected = "";
-    if (props.isSelected) cardSelected = "card-selected";
+    const [selected, setSelected] = useState(false);
+
+    const handleChange = () => {
+        setSelected(!selected);
+    };
+
     return (
-        <div className={`card ${cardSelected}`}>
+        <div className={`card ${selected ? "card-selected" : ""}`} onClick={handleChange}>
             <div className={`card-text card-header card-${props.color}`}>Безлимитный {props.price}</div>
             <div className={`card-text card-${props.color}`}><p>руб</p><span className='price-large'>{props.price}</span> /мес</div>
             <div>до {props.volume} Мбит/сек</div>
